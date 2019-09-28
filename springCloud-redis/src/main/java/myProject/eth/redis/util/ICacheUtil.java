@@ -5,6 +5,13 @@ import java.util.Set;
 
 import redis.clients.jedis.Jedis;
 
+/**
+ * @author <a href="h_sn999@126.com">hsn</a>
+ * @Discription
+ * @Data 2017-9-12
+ * @Version 1.0.0
+ */
+
 public interface ICacheUtil {
 	//Jedis getJedis()  throws Exception;
 	String getStringByKey(String key);
