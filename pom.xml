@@ -7,9 +7,6 @@
   <packaging>pom</packaging>
   
   
-  <modules>
-  	<module>E:/kk/provider-redis-xxl</module>
-  </modules>
   
       <parent>
         <groupId>org.springframework.boot</groupId>
@@ -23,4 +20,9 @@
         <docker.url>http://127.0.0.1:2375</docker.url>
     </properties>
     
+     <modules>
+     	
+     	<module>springCloud-redis</module>
+     	
+     </modules>
 </project>

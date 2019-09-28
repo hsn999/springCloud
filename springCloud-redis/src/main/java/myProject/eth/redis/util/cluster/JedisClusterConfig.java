@@ -12,6 +12,12 @@ import org.springframework.data.redis.support.collections.RedisProperties;
 
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
+/**
+ * @author <a href="h_sn999@126.com">hsn</a>
+ * @Discription
+ * @Data 2017-9-12
+ * @Version 1.0.0
+ */
 
 @Configuration
 public class JedisClusterConfig {

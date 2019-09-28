@@ -11,7 +11,7 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
- * @author <a href="zhangpengfei@wxchina.com">ZhangPengFei</a>
+ * @author <a href="h_sn999@126.com">hsn</a>
  * @Discription
  * @Data 2017-6-12
  * @Version 1.0.0
