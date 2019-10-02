@@ -23,8 +23,8 @@
      <modules>
      	
      	<module>springCloud-redis</module>
-
      	<module>springboot-jpa</module>
+     	
      </modules>
      
      
