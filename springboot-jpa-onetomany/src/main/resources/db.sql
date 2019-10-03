@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `jpa_onetomany`;
-USE `jpa_onetomany`;
+CREATE DATABASE  IF NOT EXISTS `msm`;
+USE `msm`;
 
 --
 -- Table structure for table `book_detail`
