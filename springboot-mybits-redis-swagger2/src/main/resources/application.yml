@@ -1,0 +1,17 @@
+server:
+    port: 8100
+
+mybatis:
+  typeAliasesPackage: com.springcloud.mvc.app.entity
+  mapperLocations: classpath:mapper/*.xml
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/msm?prepStmtCacheSize=517&cachePrepStmts=true&autoReconnect=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: abc123
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+      host: localhost
+      port: 6379

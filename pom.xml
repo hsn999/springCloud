@@ -28,6 +28,7 @@
      	<module>springboot-jpa-onetomany</module>
      	<module>springboot-start-tomcat</module>
      	<module>springboot-jpa-manytomany</module>
+     	<module>springboot-mybits-redis-swagger2</module>
      </modules>
      
      
