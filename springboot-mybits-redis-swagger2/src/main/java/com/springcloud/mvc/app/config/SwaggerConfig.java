@@ -3,7 +3,7 @@ package com.springcloud.mvc.app.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.springcloud.mvc.app.constant.WeiMuKeConstant;
+import com.springcloud.mvc.app.constant.MvcConstant;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.ParameterBuilder;
@@ -29,7 +29,7 @@ public class SwaggerConfig {
         //添加head参数start
         ParameterBuilder tokenParam = new ParameterBuilder();
         List<Parameter> params = new ArrayList<Parameter>();
-        tokenParam.name(WeiMuKeConstant.HTTP_HEADER_WMK_ACCESS_TOKEN).description("accessToken").modelRef(new ModelRef("string")).parameterType("header").required(false).build();
+        tokenParam.name(MvcConstant.HTTP_HEADER_MVC_ACCESS_TOKEN).description("accessToken").modelRef(new ModelRef("string")).parameterType("header").required(false).build();
         params.add(tokenParam.build());
 
         //添加参数到end

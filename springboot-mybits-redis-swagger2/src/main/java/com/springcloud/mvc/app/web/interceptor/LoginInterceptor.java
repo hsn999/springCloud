@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.springcloud.mvc.app.constant.WeiMuKeConstant;
+import com.springcloud.mvc.app.constant.MvcConstant;
 import com.springcloud.mvc.app.dto.TokenInfo;
 import com.springcloud.mvc.app.dto.UserInfoDTO;
 import com.springcloud.mvc.app.enums.ErrorCodeEnum;
@@ -28,10 +28,10 @@ public class LoginInterceptor implements HandlerInterceptor {
 
         String accessToken = null;
 
-        accessToken = request.getHeader(WeiMuKeConstant.HTTP_HEADER_WMK_ACCESS_TOKEN);
+        accessToken = request.getHeader(MvcConstant.HTTP_HEADER_MVC_ACCESS_TOKEN);
 
         if (null == accessToken) {
-            accessToken = request.getParameter(WeiMuKeConstant.RQE_PARAM_WMK_ACCESS_TOKEN);
+            accessToken = request.getParameter(MvcConstant.RQE_PARAM_MVC_ACCESS_TOKEN);
         }
 
 
