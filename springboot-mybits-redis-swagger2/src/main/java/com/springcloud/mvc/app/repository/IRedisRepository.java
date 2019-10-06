@@ -91,4 +91,23 @@ public interface IRedisRepository {
      * @param userId
      */
     void deleteOfflineMessage(String userId);
+    
+    /**
+     * 保持验证短信
+     */
+    void saveSMS(String mobilePhone,String message);
+    
+    /**
+     * 检验验证码
+     * @param mobilrPhone
+     * @param message
+     * @return
+     */
+    boolean checkSMS(String mobilePhone,String message);
+    
+    /**
+     * 
+     * @param mobilePhone
+     */
+    void deleteSMS(String mobilePhone);
 }

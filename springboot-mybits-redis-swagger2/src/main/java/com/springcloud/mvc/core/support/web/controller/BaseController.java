@@ -24,6 +24,7 @@ public class BaseController<T> {
     }
 
     protected void validateParams(BindingResult bindingResult) {
+    	System.out.println("bindingResult:"+bindingResult.getTarget()+"--"+bindingResult.getAllErrors());
         if (bindingResult.hasErrors()) {
             throw new SysException(BaseErrorCodeEnum.PARAM_ERROR, bindingResult.getFieldError().getDefaultMessage());
         }

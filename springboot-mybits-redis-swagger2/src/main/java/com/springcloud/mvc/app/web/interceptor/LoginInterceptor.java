@@ -27,8 +27,11 @@ public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
 
         String accessToken = null;
+        String userAttr = null;
 
         accessToken = request.getHeader(MvcConstant.HTTP_HEADER_MVC_ACCESS_TOKEN);
+        
+        userAttr = request.getHeader("userAttr");
 
         if (null == accessToken) {
             accessToken = request.getParameter(MvcConstant.RQE_PARAM_MVC_ACCESS_TOKEN);

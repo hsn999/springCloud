@@ -83,4 +83,25 @@ public class RedisRepositoryImpl implements IRedisRepository {
     public void deleteOfflineMessage(String userId) {
         RedisUtil.del(redisTemplate, buildKey(T_OFFLINE_MSG, userId));
     }
+
+
+	@Override
+	public void saveSMS(String mobilePhone, String message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public boolean checkSMS(String mobilePhone, String message) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public void deleteSMS(String mobilePhone) {
+		// TODO Auto-generated method stub
+		
+	}
 }
