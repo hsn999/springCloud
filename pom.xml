@@ -29,6 +29,7 @@
      	<module>springboot-start-tomcat</module>
      	<module>springboot-jpa-manytomany</module>
      	<module>springboot-mybits-redis-swagger2</module>
+     	<module>springCloud-feign-pass-parameters</module>
      </modules>
      
      
