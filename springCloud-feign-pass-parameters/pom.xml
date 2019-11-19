@@ -7,7 +7,7 @@
     <artifactId>springCloud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent> -->
-  <groupId>springCloud</groupId>
+  <groupId>springTest</groupId>
   <artifactId>springCloud-feign-pass-parameters</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>springCloud-feign-pass-parameters</name>

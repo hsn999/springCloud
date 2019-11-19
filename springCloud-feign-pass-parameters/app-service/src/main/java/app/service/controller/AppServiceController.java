@@ -1,4 +1,4 @@
-package app.gateway.controller;
+package app.service.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
@@ -7,24 +7,24 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import app.service.threadLocal.PassParameters;
 
 import java.util.Date;
+import java.util.Map;
 
 @Configuration
 @EnableWebMvc
 @RestController
 @Slf4j
-@Api(tags="gateway")
-public class Gateway1 {
+public class AppServiceController {
 
     @RequestMapping("/api")
-    @ApiOperation(value="gateway")
-    public String printDate(@RequestParam(name = "username", required = false) String username) {
+    public String printDate() {
+    	Map<String,String> map = PassParameters.get();
+    	String username = map.get("username");
         log.info("req: username={}", username);
         if (username != null) {
-            return new Date().toString() + " " + username;
+            return new Date().toString() + " service " + username;
         }
         return new Date().toString();
     }

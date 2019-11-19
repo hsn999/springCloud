@@ -1,11 +1,9 @@
-package app.gateway;
+package app.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 
@@ -13,12 +11,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * Hello world!
  *
  */
-@SpringBootApplication(scanBasePackages = {"app.gateway"}, exclude = DataSourceAutoConfiguration.class)
-@EnableFeignClients
-public class Gateway 
+@SpringBootApplication(scanBasePackages = {"app.service"}, exclude = DataSourceAutoConfiguration.class)
+public class Service 
 {
     public static void main( String[] args )
     {
-    	 SpringApplication.run(Gateway.class, args);
+    	 SpringApplication.run(Service.class, args);
     }
 }
